@@ -1,0 +1,16 @@
+{
+  "name": "medisearch-frontend-ts",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "npm run build --workspaces",
+    "preview": "npm run preview --workspaces",
+    "stop": "kill-port --port 3000, 3001, 3002, 3003, 3004"
+  },
+  "devDependencies": {
+    "kill-port": "^2.0.1"
+  }
+}
